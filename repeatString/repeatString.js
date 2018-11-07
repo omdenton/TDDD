@@ -2,9 +2,10 @@ const repeatString = function(str,numRepeats)
 {
   let returnValue = "";
 
+  if (numRepeats == 0) return "";
   if (numRepeats > 0)
   {
-    for ( i=0; i <= numRepeats; i++)
+    for ( i=0; i < numRepeats; i++)
     {
       returnValue += str;
     }
@@ -15,5 +16,4 @@ const repeatString = function(str,numRepeats)
     return "ERROR";
   }
 };
-
 module.exports = repeatString;
